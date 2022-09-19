@@ -11,8 +11,8 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '95a3756d-549a-40a4-a77f-b039aa00f5d7'
-  imageRepository: 'mydoc/image1'
-  containerRegistry: 'redeyecr.azurecr.io'
+  imageRepository: 'mydocimage1'
+  containerRegistry: 'redeyecontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
