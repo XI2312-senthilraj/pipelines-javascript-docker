@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: jsdockerimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jsdockerimage
+  template:
+    metadata:
+      labels:
+        app: jsdockerimage 
+    spec:
+      containers:
+        - name: jsdockerimage 
+          image: redeyecontainerregistry.azurecr.io/jsdockerimage
+          ports:
+          - containerPort: 8080
